@@ -1,0 +1,26 @@
+docker compose up -d --build (jika belum di build)
+docker-compose up -d (jika sudah di build)
+docker exec -it sample bash
+
+composer create-project --prefer-dist raugadh/fila-starter .
+php artisan key:generate
+php artisan storage:link
+php artisan migrate
+
+chown -R www-data:www-data storage/*
+chown -R www-data:www-data bootstrap/*
+php artisan project:initt
+
+//jalankan ini saja jika ingin mengakses localhost
+docker-compose up -d
+
+//Gunakan perintah ini untuk memulai ulang container tanpa membangun ulang
+docker-compose start
+
+//Untuk melihat status container yang sudah dibuat, kamu bisa menggunakan perintah
+docker-compose ps
+
+//Untuk menghentikan container:
+docker-compose stop
+
+untuk cek ketik localhost di chrome
