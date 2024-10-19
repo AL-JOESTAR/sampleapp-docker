@@ -9,7 +9,7 @@ php artisan migrate
 
 chown -R www-data:www-data storage/*
 chown -R www-data:www-data bootstrap/*
-php artisan project:initt
+php artisan project:init
 
 //jalankan ini saja jika ingin mengakses localhost
 docker-compose up -d
