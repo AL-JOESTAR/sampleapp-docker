@@ -5,14 +5,21 @@ php artisan make:model Classroom -ms
 tambahin di migration
 php artisan migrate
 
-//masuk ke vs code cari src/app
+//masuk ke vs code cari src/app/Models/Classroom.php
+- ganti menjadi : code Classroom.php yang sudah di kasih
 
+//masuk ke vs code cari src/app/database/migration
+- lalu pilih yang paling Bawah
+- lalu ganti ke code yang sudah di kasih
+
+//masuk ke vs code cari src/app/database/seeders
 cari :
 -ClassroomSeeder.php 
 -DatabaseSeeder.php
 -RoleSeeder.php
 
-lalu ganti dengan template yang di kasih
+lalu ganti dengan code yang di kasih
+
 
 php artisan make:filament-resource Classroom --generate
 
