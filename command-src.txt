@@ -1,0 +1,20 @@
+nyalain docker (docker-compose up -d)
+docker exec -it sample bash
+
+php artisan make:model Classroom -ms
+tambahin di migration
+php artisan migrate
+
+//masuk ke vs code cari src/app
+
+cari :
+-ClassroomSeeder.php 
+-DatabaseSeeder.php
+-RoleSeeder.php
+
+lalu ganti dengan template yang di kasih
+
+php artisan make:filament-resource Classroom --generate
+
+php artisan migrate
+php artisan project:init
