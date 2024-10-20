@@ -3,6 +3,16 @@ docker-compose up -d (jika sudah di build)
 docker exec -it sample bash
 
 composer create-project --prefer-dist raugadh/fila-starter .
+
+//masuk ke vs code dan ke sample apl pilih src/.env
+
+ganti isi nya :
+APP_TIMEZONE='Asia/Jakarta'
+APP_URL=http://localhost
+ASSET_URL=http://localhost
+DB_HOST=db
+DB_PASSWORD=p455w0rd
+
 php artisan key:generate
 php artisan storage:link
 php artisan migrate
